@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table border="1">
+      <form action="#" method="post">
+        <!-- row-1 -->
+        <tr>
+          <th colspan="2">Application form</th>
+        </tr>
+
+        <!-- row-2 -->
+        <tr>
+          <th>
+            <label for="fname">Full Name:</label>
+          </th>
+          <td>
+            <input type="text" id="fname" name="fullname" />
+            (max 20 char a-z and A-Z)
+          </td>
+        </tr>
+
+        <!-- row-3 -->
+        <tr>
+          <th>
+            <label for="lname">Last Name:</label>
+          </th>
+          <td>
+            <input type="text" name="lastname" id="lname" />
+            (max 20 char a-z and A-Z)
+          </td>
+        </tr>
+
+        <!-- row-4 -->
+        <tr>
+          <th>
+            <label for="dob">Date of Birth:</label>
+          </th>
+          <td>
+            <input type="date" id="dob" name="dateofbirth" />
+          </td>
+        </tr>
+
+        <!-- row-5 -->
+        <tr>
+          <th>Gender:</th>
+          <td>
+            <input type="radio" value="Male" name="gender" id="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" value="Female" name="gender" id="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+
+        <!-- row-6 -->
+        <tr>
+          <th>
+            <label for="emailid">Email id:</label>
+          </th>
+          <td>
+            <input type="email" id="emailid" name="email" />
+          </td>
+        </tr>
+
+        <!-- row-7 -->
+        <tr>
+          <th>
+            <label for="phno">Phone no:</label>
+          </th>
+          <td>
+            <input type="tel" id="phno" name="phonenum" maxlength="10" />
+          </td>
+        </tr>
+
+        <!-- row-8 -->
+        <tr>
+          <th>
+            <label for="Address">Address:</label>
+          </th>
+          <td>
+            <textarea
+              name="address"
+              id="Address"
+              cols="38"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+
+        <!-- row-9 -->
+        <tr>
+          <th>
+            <label for="City">City:</label>
+          </th>
+          <td>
+            <input type="text" id="City" name="city" />(max 20 char a-z and A-Z)
+          </td>
+        </tr>
+
+        <!-- row-10 -->
+        <tr>
+          <th>
+            <label for="Pincode">Pin code:</label>
+          </th>
+          <td>
+            <input type="text" id="Pincode" name="pincode" />
+          </td>
+        </tr>
+
+        <!-- row-11 -->
+        <tr>
+          <th>
+            <label for="State">State:</label>
+          </th>
+          <td>
+            <input type="text" id="State" name="state" />
+          </td>
+        </tr>
+
+        <!-- row-12 -->
+        <tr>
+          <th>
+            <label for="Country">Country:</label>
+          </th>
+          <td>
+            <input type="text" id="Country" name="country" />
+          </td>
+        </tr>
+
+        <!-- row-13 -->
+        <tr>
+          <th>Hobbies:</th>
+          <td>
+            <input
+              type="checkbox"
+              value="Drawing"
+              id="drawing"
+              name="hobbie[]"
+            />
+            <label for="drawing">Drawing</label>
+
+            <input
+              type="checkbox"
+              value="Singing"
+              id="singing"
+              name="hobbie[]"
+            />
+            <label for="singing">Singing</label>
+
+            <input
+              type="checkbox"
+              value="Dancing"
+              id="dancing"
+              name="hobbie[]"
+            />
+            <label for="dancing">Dancing</label> <br />
+
+            <input type="checkbox" value="Others" id="others" name="hobbie[]" />
+            <label for="others">Others</label>
+          </td>
+        </tr>
+
+        <!-- row-14 -->
+        <tr>
+          <th>
+            <label for="Qualification">Qualification:</label>
+          </th>
+          <td>
+            <table id="innertable" border="0">
+              <!-- row-1 -->
+              <tr>
+                <th>Sl.no</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+              </tr>
+
+              <!-- row-2 -->
+              <tr>
+                <td>01</td>
+                <th>
+                  <label for="classX[]">Class X</label>
+                </th>
+                <td>
+                  <input type="text" id="classX-board" name="class10-board" />
+                </td>
+                <td>
+                  <input type="text" id="classX-%" name="class10-percentage" />
+                </td>
+                <td>
+                  <input type="text" id="classX-yop" name="class10-yop" />
+                </td>
+              </tr>
+
+              <!-- row-3 -->
+              <tr>
+                <td>02</td>
+                <th>
+                  <label for="classXII[]">Class XII</label>
+                </th>
+                <td>
+                  <input type="text" id="classXII[]" name="class12" />
+                </td>
+                <td>
+                  <input type="text" id="classXII[]" name="class12" />
+                </td>
+                <td>
+                  <input type="text" id="classXII[]" name="class12" />
+                </td>
+              </tr>
+
+              <!-- row-4 -->
+              <tr>
+                <td>03</td>
+                <th>
+                  <label for="graduation">Graduation</label>
+                </th>
+                <td>
+                  <input type="text" id="graduation" name="graduate" />
+                </td>
+                <td>
+                  <input type="text" id="graduation" name="graduate" />
+                </td>
+                <td>
+                  <input type="text" id="graduation" name="graduate" />
+                </td>
+              </tr>
+
+              <!-- row-5 -->
+              <tr>
+                <td>04</td>
+                <th>
+                  <label for="Master">Master</label>
+                </th>
+                <td>
+                  <input type="text" id="Master" name="Head" />
+                </td>
+                <td>
+                  <input type="text" id="Master" name="Head" />
+                </td>
+                <td>
+                  <input type="text" id="Master" name="Head" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- row-15 -->
+        <tr>
+          <th>
+            <label for="Course[]">Course Applied for:</label>
+          </th>
+          <td>
+            <input type="checkbox" value="BCA" id="bca" name="Course" />
+            <label for="bca">BCA</label>
+
+            <input type="checkbox" value="B.COM" id="bcom" name="Course" />
+            <label for="bcom">B.Com</label>
+
+            <input type="checkbox" value="B.SC" id="bsc" name="Course" />
+            <label for="bsc">B.Sc</label>
+
+            <input type="checkbox" value="B.A" id="BA" name="Course" />
+            <label for="BA">B.A</label>
+          </td>
+        </tr>
+
+        <!-- row-16 -->
+        <tr>
+          <th>
+            <label for="time">Time:</label>
+          </th>
+          <td>
+            <input type="week" id="time" />
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <input type="submit" name="" id="" />
+            <input type="reset" name="" id="" />
+          </th>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

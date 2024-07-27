@@ -1,0 +1,40 @@
+table {
+  width: 700px;
+}
+table tr:first-child th {
+  height: 40px;
+  background-color: aqua;
+  text-align: center;
+}
+table tr:nth-child(2) > th {
+  width: 150px;
+}
+table tr:nth-child(2) > td input,
+table tr:nth-child(3) > td input,
+table tr:nth-child(6) > td input,
+table tr:nth-child(7) > td input,
+table tr:nth-child(9) > td input,
+table tr:nth-child(10) > td input,
+table tr:nth-child(11) > td input,
+table tr:nth-child(12) > td input {
+  width: 300px;
+}
+
+#innertable tr:first-child > th:nth-child(3),
+#innertable tr:first-child > th:nth-child(4),
+#innertable tr:first-child > th:nth-child(5) {
+  text-align: center;
+}
+
+#innertable tr:nth-child(4) > td input,
+#innertable tr:nth-child(5) > td input {
+  width: 300px;
+}
+
+table tr:last-child > th {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}

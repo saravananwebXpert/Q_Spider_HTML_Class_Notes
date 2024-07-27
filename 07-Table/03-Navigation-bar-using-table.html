@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav-Bar-Using-Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table tr:nth-child(1) {
+        height: 40px;
+      }
+      #gap1 {
+        width: 1000px;
+      }
+      #gap2 {
+        width: 100px;
+      }
+      table tr:nth-child(2) th {
+        height: 70px;
+      }
+      table tr:nth-child(3) > td {
+        text-align: center;
+      }
+      table tr:nth-child(3) td:nth-child(1) {
+        width: 1000px;
+      }
+      table tr:nth-child(3) td:nth-child(2) ul {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Static Web Page
+      </caption>
+
+      <!-- row-1 -->
+
+      <tr>
+        <th>Home</th>
+        <th id="gap1"></th>
+        <th>Login</th>
+        <th>Signup</th>
+        <th d="gap2">Contact info</th>
+      </tr>
+
+      <!-- row-2 -->
+      <tr>
+        <th colspan="5"></th>
+      </tr>
+
+      <!-- row-3 -->
+      <tr>
+        <td colspan="2">
+          <p><b>Summer Offer</b></p>
+          <p>
+            You can avail 40-50% off on exchanging refrigerator and AC and 50%
+            off on a wide range of TV brands like OnePluse, LG, and Samsung.The
+            company also features no-cost EMI, easy installation and scheduled
+            delivery with a total protection plan for products. If you use a
+            Bajaj Finserv card, then you can get no-cost EMI on home appliances
+            and electronics. You can also save ₹15000 on exchanging old
+            products. To know more about the exchange offers you can visit here.
+          </p>
+        </td>
+
+        <td colspan="4">
+          <p><b>Offering</b></p>
+
+          <ul>
+            <li>Table Fan</li>
+            <li>Air Conditioner</li>
+            <li>Refrigerators</li>
+            <li>Air cooler</li>
+            <li>Washing machine</li>
+            <li>Microwaves</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

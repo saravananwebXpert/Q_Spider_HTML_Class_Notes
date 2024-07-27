@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list in list</title>
+    <style>
+      span {
+        color: brown;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .none {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Saravanan's Restaurant</h1>
+    <h2>Discover the best food & drinks in Chennai</h2>
+    <h2>Categories</h2>
+    <div>
+      <ol>
+        <li>Veg</li>
+        <li class="none">
+          <ul type="disc">
+            <li>Pongal</li>
+            <li>Dosai</li>
+            <li>Poori</li>
+            <li>Vadai</li>
+          </ul>
+        </li>
+
+        <li>Non-Veg</li>
+        <li class="none">
+          <ul type="square">
+            <li>Chicken Biriyani</li>
+            <li>Schezwan Chicken Fried Rice</li>
+            <li>Grilled Chicken</li>
+            <li>Omelette</li>
+          </ul>
+        </li>
+
+        <li>
+          <dl>
+            <dt>Starter</dt>
+            <dd>Fruit Salad</dd>
+          </dl>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

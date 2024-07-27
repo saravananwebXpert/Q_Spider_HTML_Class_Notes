@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table and Table attributes</title>
+    <style>
+      td,
+      th {
+        padding: 15px;
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table tags</h1>
+    <ul>
+      <li>caption</li>
+    </ul>
+    <h1>Table Attributes</h1>
+    <ul>
+      <li>border</li>
+      <li>border-collapse:collapse</li>
+      <li>colspan</li>
+      <li>rowspan</li>
+      <li>padding</li>
+      <li>border-spacing</li>
+    </ul>
+    <table border="1">
+      <caption>
+        L-1
+      </caption>
+      <tr>
+        <td colspan="3">1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td colspan="2">8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td colspan="3">10</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <caption>
+        L-2
+      </caption>
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td rowspan="2">9</td>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td colspan="2">13</td>
+      </tr>
+    </table>
+  </body>
+</html>

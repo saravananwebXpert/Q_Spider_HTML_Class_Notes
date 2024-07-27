@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>form tags</h1>
+    <ul>
+      <li>fieldset tag</li>
+      <li>input tag</li>
+      <li>label tag</li>
+    </ul>
+
+    <fieldset>
+      <legend><h1>Student Details</h1></legend>
+
+      <form action="#" method="post" validate autocomplete="off">
+        <!-- first name -->
+        <label for="fname">First Name: </label> <br />
+        <input type="text" id="fname" name="firstname" value="Mr." size="2" />
+        <br />
+        <br />
+
+        <!-- last name -->
+        <label for="lname"> Last Name:</label> <br />
+        <input type="text" id="lname" name="lastname" autofocus /> <br />
+        <br />
+
+        <!-- Qualification -->
+        <label for="Qualification">Qualification:</label> <br />
+        <input type="text" id="Qualification" name="Qualify" /> <br />
+        <br />
+
+        <!-- Address -->
+        <label for="Address"> Address </label> <br />
+        <textarea name="" id="Address" cols="50" rows="5"></textarea> <br />
+        <br />
+
+        <!-- this is dropdown,  shortcut = ctrl+forward slash -->
+        <label for="Course"> Select Course:</label>
+        <select name="coursetoenroll" id="Course">
+          <option value="Html">Html</option>
+          <option value="CSS">CSS</option>
+          <option value="Javascript">Javascript</option>
+        </select>
+        <br />
+        <br />
+
+        <!-- contact number -->
+        <label for="phno">Contact no:</label>
+        <input
+          type="tel"
+          id="phno"
+          name="Phonenumber"
+          maxlength="10"
+          placeholder="Enter your phone number"
+        />
+        <br />
+        <br />
+
+        <!-- Gender -->
+        <label for="Genmale">Gender:</label>
+
+        <input type="radio" id="Genmale" value="male" name="Gender" />
+        <label for="Genmale">Male</label>
+
+        <input type="radio" id="Genfemale" value="female" name="Gender" />
+        <label for="Genfemale">Female</label>
+
+        <input type="radio" id="Genothers" value="others" name="Gender" />
+        <label for="Genothers">Others</label> <br />
+        <br />
+
+        <!-- email -->
+        <label for="email">Email id:</label>
+        <input type="email" name="emailid" id="email" /> <br />
+        <br />
+
+        <!-- date of birth -->
+        <label for="Dob">Date of birth:</label>
+        <input type="date" name="dateof birth" id="Dob" /> <br />
+        <br />
+
+        <!-- file-upload -->
+        <form action="./iframe/" enctype="multipart/form-data">
+          <label for="resume">Resume:</label>
+          <input type="file" id="resume" name="resumefile" /> <br />
+          <br />
+        </form>
+
+        <!-- submit -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

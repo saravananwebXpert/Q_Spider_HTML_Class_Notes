@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > table {
+        padding: 5px;
+        border-color: brown;
+        border: 0px;
+      }
+      td,
+      th {
+        width: 300px;
+        height: 130px;
+        border: 3px solid brown;
+      }
+      .names {
+        height: 20px;
+        width: 140px;
+      }
+      .last-row {
+        height: 30px;
+        width: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>
+          <p>This paragraph is about me!</p>
+
+          <p>This is another paragraph about me!</p>
+        </td>
+        <td>
+          <p>Random Names</p>
+
+          <table>
+            <tr>
+              <td class="names">
+                <ol type="I">
+                  <li>Doe</li>
+                </ol>
+              </td>
+              <td class="names">
+                <ol type="a" start="16">
+                  <li>play</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td class="names">
+                <ol type="A" start="2">
+                  <li>Bob</li>
+                </ol>
+              </td>
+              <td class="names">
+                <ol type="A" start="20">
+                  <li>sam</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="last-row">
+                <ul type="none">
+                  <li>Contact me for details</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>free software</p>
+          <ol>
+            <li>Linux</li>
+            <li>Apache</li>
+            <li>Mysql</li>
+            <li>PHP</li>
+          </ol>
+        </td>
+        <td>HELLO</td>
+      </tr>
+    </table>
+  </body>
+</html>
